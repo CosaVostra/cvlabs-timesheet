@@ -1,0 +1,25 @@
+<template name="sideBar">
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <ul class="sidebar-menu">
+        {{#if isReady "currentUser"}}
+        <!-- {{#if showLink}} -->
+        <li class="active"><a href="/"><i class="fa fa-link"></i> <span>Dashboard</span></a></li>
+        <!-- {{/if}} -->
+        {{/if}}
+        {{#if isReady "currentUser"}}
+        {{#if showLink}}
+        <li ><a href="/levels"><i class="fa fa-link"></i> <span>Level master</span></a></li>
+        <li ><a href="/expertises"><i class="fa fa-link"></i> <span>Expertises master</span></a></li>
+        <li ><a href="/client"><i class="fa fa-link"></i> <span>Client master</span></a></li>
+        <li><a id="lnkuser" href="#"><i class="fa fa-link"></i> <span>User master</span></a></li>
+        {{/if}}
+        {{/if}}
+        <li><a href="/timesheet/add"><i class="fa fa-link"></i> <span>Timesheet master</span></a></li>
+      </ul>
+      <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+</template>

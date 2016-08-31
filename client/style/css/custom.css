@@ -1,0 +1,162 @@
+a[disabled=disabled] {
+  color: #8fb5d6;
+}
+
+#login .wrapper, #register .wrapper, #invite .wrapper {
+  background-color: transparent !important;
+}
+
+#notFound .wrapper,#accessDenied .wrapper {
+  background-color: #ecf0f5 !important;
+}
+
+#login .checkbox, #register .checkbox {
+  margin-left: 20px;
+}
+
+/*switch css start*/
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary {
+  color: #337ab7;
+  background: #337ab7;
+}
+
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary {
+  color: #999;
+  background: #999;
+}
+/*switch css ends*/
+
+.footable-row-detail-inner {
+  width: 67%;
+}
+
+.footable-row-detail-name {
+  width: 1%;
+}
+
+/*invite page css*/
+.lockscreen-item, .input-group {
+  margin-bottom: 20px !important;
+  width: 240px !important;
+}
+
+.lockscreen-credentials {
+  margin-left: 0px !important;
+}
+
+.lockscreen-button {
+  border-radius: 4px;
+  padding: 0;
+  position: relative;
+  margin: 10px auto 30px auto;
+  width: 290px;
+}
+
+.input-button {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+  margin-bottom: 15px !important;
+  width: 260px !important;
+  margin-left: 15px;
+}
+/*invite ends*/
+
+/*modal*/
+@media (min-width: 768px) {
+  #forgotPasswordModal .modal-dialog {
+    width: 360px;
+    margin: 200px auto;
+  }
+}
+/*modal ends*/
+
+/*validation*/
+ul.parsley-errors-list{
+  list-style-type: none;
+  margin-left: -35px;
+  color: red;
+}
+.text-danger {
+  color: red;
+  font-weight: 500;
+}
+
+#errPassword, #errRetypePassword {
+  margin: -12px 0px 0px 65px;
+}
+
+/*autocomplete input*/
+#txtProject.input-length, #txtExpertises.input-length {
+  width: 240px !important;
+  border: 1px solid #ccc !important;
+}
+
+#txtProject.input-length:focus, #txtExpertises.input-length:focus {
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+  border-color: #3c8dbc !important;
+}
+/*autocomplete inout ends*/
+
+#btnExport {
+  margin-right: 50px;
+}
+
+.modal-content1 {
+  position: absolute;
+  width: 1000px;
+  background-color: azure;
+}
+
+element.style {
+  float: left;
+  margin-left: 250px;
+}
+.chzn-container-active.chzn-with-drop .chzn-single
+{
+
+}
+.chzn-container-single .chzn-single
+{
+  height:32px;
+  border-radius: 0 !important;
+  background: none;
+  border-color: #ccc;
+}
+.chzn-container-single .chzn-single span{
+    padding-top:4px;
+}
+.chzn-container-active.chzn-with-drop .chzn-single div b{
+  background-position: -18px 6px;
+}
+.chzn-container-single .chzn-single div b{
+  background-position: 0px 6px;
+}
+.chosen{
+  margin-right: 26px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  width: 240px !important;
+  border: 1px solid #ccc !important;
+  border-radius: 0 !important;
+  box-shadow: none;
+  background-color: #fff;
+}
+
+.btn-submit{
+  height:30px;
+  width:30px;
+}
+
+.btn-submit i{
+  font-size: 1.5em;
+  padding: 0;
+  margin-left: -7px;
+  margin-top: -2px;
+}

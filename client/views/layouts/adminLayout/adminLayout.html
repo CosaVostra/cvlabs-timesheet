@@ -1,0 +1,13 @@
+<template name="adminLayout">
+  <!-- <body class="skin-blue sidebar-mini"> -->
+  {{#AdminLTE skin="blue" fixed="true"}}
+  {{> header}}
+  {{> sideBar}}
+
+  <div class="content-wrapper">
+    {{> Template.dynamic template=content}}
+  </div>
+  {{/AdminLTE}}
+  {{> footer}}
+  <!-- </body> -->
+</template>

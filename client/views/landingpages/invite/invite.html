@@ -1,0 +1,50 @@
+<template name="invite">
+  {{#if isReady 'inviteeData'}}
+  {{#if userInfo}}
+  <body id="invite" class="hold-transition lockscreen">
+    {{#AdminLTE skin="blue"}}
+    <div class="lockscreen-wrapper">
+      <div class="lockscreen-logo">
+        <a href="#"><b>Time</b>Sheet</a>
+      </div>
+      <div class="lockscreen-name">
+        <label id="lblInviteMsg" class="text-danger"></label>
+      </div>
+      <div class="lockscreen-name">You have been invited to join <strong>{{userInfo.companyName}}</strong> team.</div>
+      <br>
+      <div class="lockscreen-name"><strong>{{userInfo.userEmail}}</strong></div>
+      <form id="inviteForm" method="post">
+        <div class="lockscreen-item">
+          <form class="lockscreen-credentials">
+            <div class="input-group">
+              <input id="txtUserPassword" name="userPassword" type="password" class="form-control" placeholder="password" required data-parsley-minlength="6" data-parsley-minlength-message="Atleast 6 characters are required." data-parsley-errors-container="#errPassword">
+            </div>
+          </form>
+        </div>
+        <div id="errPassword"></div>
+        <div class="lockscreen-item">
+          <form class="lockscreen-credentials">
+            <div class="input-group">
+              <input type="password" name="confirmPassword" class="form-control" placeholder="repeat password" required data-parsley-minlength="6" data-parsley-minlength-message="Atleast 6 characters are required." data-parsley-equalto="#txtUserPassword" data-parsley-equalto-message="Password does not match." data-parsley-errors-container="#errRetypePassword">
+            </div>
+          </form>
+        </div>
+        <div id="errRetypePassword"></div>
+        <div class="lockscreen-button">
+          <div class="input-button">
+            <button id="btnSetPassword" type="submit" class="btn btn-primary pull-right">Signin</button>
+          </div>
+        </div>
+      </form>
+      <div class="lockscreen-footer text-center">
+        Copyright &copy; 2014-2016 <b><a href="http://almsaeedstudio.com" class="text-black">Almsaeed Studio</a></b><br>
+        All rights reserved
+      </div>
+    </div>
+    {{/AdminLTE}}
+  </body>
+  {{else}}
+  {{> notFound}}
+  {{/if}}
+  {{/if}}
+</template>
